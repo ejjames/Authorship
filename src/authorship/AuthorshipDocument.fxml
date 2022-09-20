@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authorship.AuthorshipDocumentController">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="931.0" layoutX="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pexels-photo-235985.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="daBook" layoutX="693.0" layoutY="145.0" mnemonicParsing="false" onAction="#readBook" prefHeight="25.0" prefWidth="88.0" text="Add Book" />
+      <TextArea fx:id="words" layoutX="602.0" layoutY="193.0" prefHeight="415.0" prefWidth="272.0" wrapText="true" />
+      <TextField fx:id="authorText" layoutX="704.0" layoutY="101.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextArea fx:id="authorLibrary" layoutX="14.0" layoutY="144.0" prefHeight="187.0" prefWidth="247.0" />
+      <TextArea fx:id="bookLibrary" layoutX="16.0" layoutY="389.0" prefHeight="187.0" prefWidth="247.0" />
+      <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="214.0" layoutY="14.0" prefHeight="62.0" prefWidth="479.0" text="The Motherload of Libraries" textAlignment="CENTER">
+         <font>
+            <Font name="AR JULIAN" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="39.0" layoutY="83.0" prefHeight="62.0" prefWidth="200.0" text="Our Library" textAlignment="CENTER">
+         <font>
+            <Font name="AR JULIAN" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="38.0" layoutY="329.0" prefHeight="62.0" prefWidth="200.0" text="Author Stats" textAlignment="CENTER">
+         <font>
+            <Font name="AR JULIAN" size="21.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="mysteryBookText" layoutX="285.0" layoutY="144.0" prefHeight="432.0" prefWidth="293.0" />
+      <TextField fx:id="mysteryAuthorText" layoutX="285.0" layoutY="583.0" prefHeight="25.0" prefWidth="293.0" />
+      <Button fx:id="mysteryAuthorButton" layoutX="361.0" layoutY="101.0" mnemonicParsing="false" onAction="#readMystery" prefHeight="25.0" prefWidth="142.0" text="Mystery Author" />
+      <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="602.0" layoutY="83.0" prefHeight="62.0" prefWidth="88.0" text="Author" textAlignment="CENTER">
+         <font>
+            <Font name="AR JULIAN" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="loadButton" layoutX="16.0" layoutY="583.0" mnemonicParsing="false" onAction="#loadSig" prefHeight="25.0" prefWidth="95.0" text="Load Signatures">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="167.0" layoutY="583.0" mnemonicParsing="false" onAction="#saveSig" prefHeight="25.0" prefWidth="95.0" text="Save Signatures">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</Pane>
